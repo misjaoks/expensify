@@ -1,0 +1,32 @@
+{
+  "name": "expensify",
+  "version": "1.0.0",
+  "description": "React Native application for managing expenses",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "react-native start",
+    "ios-open": "open ios/*.xcodeproj",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "lint": "eslint src test *.js",
+    "remotedev": "remotedev-debugger --injectserver",
+    "postinstall": "npm run remotedev && rndebugger-open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misjaoks/expensify.git"
+  },
+  "author": "Kelli Lukas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misjaoks/expensify/issues"
+  },
+  "homepage": "https://github.com/misjaoks/expensify#readme",
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-native": "^0.54.4",
+    "react-redux": "^5.0.7",
+    "redux-thunk": "^2.2.0"
+  }
+}
